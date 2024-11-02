@@ -1,0 +1,10 @@
+module cladder8bit(a,b,cout,z);
+input [7:0]a;
+input [7:0]b;
+output [7:0]z;
+output cout;
+wire x;
+cla4b c1(z[3:0],x,a[3:0],b[3:0],1'b0);
+cla4b c2(z[7:4],cout,a[7:4],b[7:4],x);
+
+endmodule
